@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/config/theme/app_theme.dart';
+import 'package:widgets_app/presentation/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: AppTheme(selectedColor: 1).getTheme(),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      theme: AppTheme(selectedColor: 0).getTheme(),
+      home: const HomeScreen(),
     );
   }
 }
