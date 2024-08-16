@@ -7,3 +7,4 @@ export 'package:widgets_app/presentation/screens/infinite_scroll/infinite_scroll
 export 'package:widgets_app/presentation/screens/progress_screen/progress_screen.dart';
 export 'package:widgets_app/presentation/screens/snackbar_screen/snackbar_screen.dart';
 export 'package:widgets_app/presentation/screens/ui_controls/ui_controls_creen.dart';
+
