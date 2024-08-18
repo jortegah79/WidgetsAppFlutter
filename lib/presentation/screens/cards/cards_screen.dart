@@ -23,9 +23,7 @@ class CardsScreen extends StatelessWidget {
 }
 
 class _CardsView extends StatelessWidget {
-  const _CardsView({
-    super.key,
-  });
+  const _CardsView();
 
   @override
   Widget build(BuildContext context) {
@@ -34,16 +32,16 @@ class _CardsView extends StatelessWidget {
         children: [
           ...cards.map((card) =>
               _CardType1(label: card['label'], elevation: card['elevation'])),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           ...cards.map((card) =>
               _CardType2(label: card['label'], elevation: card['elevation'])),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           ...cards.map((card) =>
               _CardType3(label: card['label'], elevation: card['elevation'])),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           ...cards.map((card) =>
               _CardType4(label: card['label'], elevation: card['elevation'])),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
         ],
       ),
     );
@@ -111,7 +109,7 @@ class _CardType2 extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomLeft,
-            child: Text("${label}-outline"),
+            child: Text("$label-outline"),
           )
         ]),
       ),
@@ -145,7 +143,7 @@ class _CardType3 extends StatelessWidget {
           ),
           Align(
             alignment: Alignment.bottomLeft,
-            child: Text("${label}-filled"),
+            child: Text("$label-filled"),
           )
         ]),
       ),
@@ -174,7 +172,7 @@ class _CardType4 extends StatelessWidget {
         Align(
             alignment: Alignment.topRight,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20))
               ),

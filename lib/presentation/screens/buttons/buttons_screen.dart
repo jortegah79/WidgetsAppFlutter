@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/config/router/app_router.dart';
 
 class ButtonsScreen extends StatelessWidget {
   static const String name = 'buttons_screen';
@@ -23,9 +22,7 @@ class ButtonsScreen extends StatelessWidget {
 }
 
 class _ButtonsView extends StatelessWidget {
-  const _ButtonsView({
-    super.key,
-  });
+  const _ButtonsView();
 
   @override
   Widget build(BuildContext context) {
@@ -46,31 +43,31 @@ class _ButtonsView extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(Icons.access_alarm_rounded),
                 label: const Text("Elevated icon")),
-            FilledButton(onPressed: () {}, child: Text("FIlled")),
+            FilledButton(onPressed: () {}, child: const Text("FIlled")),
             FilledButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.add_location),
-                label: Text("FIlled icon")),
-            OutlinedButton(onPressed: () {}, child: Text("Outline")),
+                label: const Text("FIlled icon")),
+            OutlinedButton(onPressed: () {}, child: const Text("Outline")),
             OutlinedButton.icon(
                 onPressed: () {},
-                label: Text("Outline"),
-                icon: Icon(Icons.edit_note_outlined)),
+                label: const Text("Outline"),
+                icon: const Icon(Icons.edit_note_outlined)),
             TextButton(onPressed: () {}, child: const Text("Text")),
             TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.wallet_giftcard),
                 label: const Text("Text")),
             IconButton(
-                onPressed: () {}, icon: Icon(Icons.app_registration_rounded)),
+                onPressed: () {}, icon: const Icon(Icons.app_registration_rounded)),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.app_registration_rounded),
+              icon: const Icon(Icons.app_registration_rounded),
               style: ButtonStyle(
                   backgroundColor: WidgetStatePropertyAll(colors.primary),
-                  iconColor: WidgetStatePropertyAll(Colors.white)),
+                  iconColor: const WidgetStatePropertyAll(Colors.white)),
             ),
-            _CustomButton()
+            const _CustomButton()
           ],
         ),
       ),
@@ -79,7 +76,7 @@ class _ButtonsView extends StatelessWidget {
 }
 
 class _CustomButton extends StatelessWidget {
-  const _CustomButton({super.key});
+  const _CustomButton();
 
   @override
   Widget build(BuildContext context) {
@@ -91,8 +88,8 @@ class _CustomButton extends StatelessWidget {
         color: colors.primary,
         child: InkWell(
           onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
               "Hola mundo",
               style: TextStyle(color: Colors.white),
