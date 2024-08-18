@@ -15,11 +15,13 @@ class MenuItem {
 
 const List<MenuItem> appMenuItems = [
   
-  MenuItem(title: 'Botones',             subtitle: 'Varios botones en Flutter',  link: '/buttons',   icon: Icons.smart_button_outlined),
-  MenuItem(title: 'Tarjetas',            subtitle: 'Un contenedor estilizado',   link: '/cards',     icon: Icons.credit_card),
-  MenuItem(title: 'ProgressIndicators',  subtitle: 'Generales y controlados',    link: '/progress',  icon: Icons.refresh_rounded),
-  MenuItem(title: 'Snackbars y diálogos',subtitle: 'Indicadores en pantalla',    link: '/snackbars', icon: Icons.info_outline),
-  MenuItem(title: 'Animated container',  subtitle: 'Statefull animadp',          link: '/animated',  icon: Icons.check_box_outline_blank_rounded),
+  MenuItem(title: 'Botones',             subtitle: 'Varios botones en Flutter',  link: '/buttons',    icon: Icons.smart_button_outlined),
+  MenuItem(title: 'Tarjetas',            subtitle: 'Un contenedor estilizado',   link: '/cards',      icon: Icons.credit_card),
+  MenuItem(title: 'ProgressIndicators',  subtitle: 'Generales y controlados',    link: '/progress',   icon: Icons.refresh_rounded),
+  MenuItem(title: 'Snackbars y diálogos',subtitle: 'Indicadores en pantalla',    link: '/snackbars',  icon: Icons.info_outline),
+  MenuItem(title: 'Animated container',  subtitle: 'Statefull animadp',          link: '/animated',   icon: Icons.check_box_outline_blank_rounded),
+  MenuItem(title: 'Ui Controls + TIles', subtitle: 'Una serie de controles',     link: '/ui-controls',icon: Icons.car_rental_outlined),
+  MenuItem(title: 'Introducción a la app',subtitle: 'Tutorial introductorio',    link: '/tutorial',    icon: Icons.accessibility_rounded),
   /*MenuItem(title: 'Tarjetas',           subtitle: 'Un contenedor estilizado',   link: '/cards', icon: Icons.credit_card),
 */
 ];
