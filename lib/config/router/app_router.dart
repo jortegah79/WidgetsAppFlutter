@@ -34,11 +34,11 @@ final appRouter = GoRouter(initialLocation: '/', routes: [
       path: '/tutorial',
       name: AppTutorialScreen.name,
       builder: (context, state) => const AppTutorialScreen()),
-  /*GoRoute(
-    path: '/cards',
-    name: CardsScreen.name,
-    builder: (context, state) => const CardsScreen()),
-    GoRoute(
+  GoRoute(
+    path: '/infinite',
+    name: InfiniteScrollScreen.name,
+    builder: (context, state) => const InfiniteScrollScreen()),
+  /*  GoRoute(
     path: '/cards',
     name: CardsScreen.name,
     builder: (context, state) => const CardsScreen()),*/
