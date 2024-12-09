@@ -26,6 +26,7 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     setState(() { });
     moveScrollToBottom();
     
+    
   }
 
   Future loadNextPage() async {
